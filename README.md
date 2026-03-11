@@ -3,7 +3,7 @@
 ### Header 2
 
 |Nombre|Apellido|Mail|Telefono||link|
-|-----:|:------:|:----:|:------:|:----:|
+|-----:|:------|----|------|:----:|
 
 *Ejercicio 1: Cómo crear, modificar y hacer un archivo README.md*
 
