@@ -1,0 +1,108 @@
+\documentclass[11pt,a4paper,sans]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+% Márgenes ligeramente más ajustados para dar espacio a la foto y contenido
+\usepackage[left=1.6cm,right=1.6cm,top=1.5cm,bottom=1.5cm]{geometry}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{titlesec}
+\usepackage{xcolor}
+\usepackage{fontawesome5}
+\usepackage{graphicx} % Necesario para imágenes
+\usepackage{tikz} % Necesario para el recorte circular
+
+% --- CONFIGURACIÓN DE COLORES Y ESTILO ---
+\definecolor{darkblue}{RGB}{28, 54, 91}
+\definecolor{accentblue}{RGB}{52, 152, 219}
+
+% Estilo de los títulos de sección
+\titleformat{\section}{\large\bfseries\color{darkblue}\uppercase}{}{0pt}{}[\titlerule]
+\titlespacing{\section}{0pt}{15pt}{8pt}
+
+% Ocultar los rectángulos de los enlaces
+\hypersetup{hidelinks}
+
+\begin{document}
+
+% --- ENCABEZADO CON FOTO Y DATOS ---
+\noindent
+\begin{minipage}[c]{0.22\textwidth} % Columna para la foto (22% del ancho)
+    \begin{center}
+        \begin{tikzpicture}
+            % Recorte circular: ajusta el radio (1.6cm) y el ancho de la imagen (3.3cm) según necesites
+            \clip (0,0) circle (2.3 cm);
+            \node at (0,0) {\includegraphics[width=3.3cm]{foto.jpg}}; 
+        \end{tikzpicture}
+    \end{center}
+\end{minipage}
+\hfill
+\begin{minipage}[c]{0.75\textwidth} % Columna para el texto (75% del ancho), alineada verticalmente al centro
+    \raggedright % Alineado a la izquierda dentro de la minipage
+    {\Huge \textbf{\color{darkblue}AMPARO NICOTRA}} \\
+    \vspace{6pt}
+    {\large \color{accentblue} Estudiante de Ingeniería Industrial | Asistente Ejecutiva} \\
+    \vspace{10pt}
+    \small
+    \faPhone \ 0261-5977707 \quad 
+    \faEnvelope \ \href{mailto:nicotraamparo@gmail.com}{nicotraamparo@gmail.com} \\
+    \faLinkedin \ \href{https://www.linkedin.com/in/amparo-nicotra}{linkedin.com/in/amparo-nicotra} \quad
+    \faMapMarker* \ Mendoza, Argentina
+\end{minipage}
+
+\vspace{15pt}
+
+% --- PERFIL ---
+\section*{Perfil Profesional}
+Estudiante avanzada de Ingeniería Industrial con sólida capacidad analítica y experiencia en soporte administrativo estratégico. Especializada en la optimización de flujos de trabajo, gestión de agendas complejas y atención ejecutiva. Poseo un perfil proactivo orientado a resultados, con habilidades avanzadas en comunicación bilingüe y herramientas de gestión digital.
+
+% --- EXPERIENCIA LABORAL ---
+\section*{Experiencia Laboral}
+
+\noindent \textbf{MyContent – Asistencia Ejecutiva y Gestión de Procesos} \hfill \textbf{2025 -- Actualidad} \\
+\textit{Rol: Asistente Ejecutiva}
+\begin{itemize}[leftmargin=1.5em, labelsep=0.5em, itemsep=4pt]
+    \item \textbf{Soporte Administrativo Estratégico:} Coordinación integral de la agenda ejecutiva y gestión de comunicaciones críticas, asegurando un flujo de trabajo eficiente entre los departamentos internos y clientes clave.
+    \item \textbf{Optimización de Flujos de Trabajo:} Aplicación de criterios de ingeniería para la mejora de los sistemas de reporte y seguimiento de tareas, incrementando la productividad operativa del equipo directivo.
+    \item \textbf{Gestión de Relaciones Institucionales:} Actúo como nexo principal entre la dirección y los \textit{stakeholders}, facilitando la toma de decisiones mediante la elaboración de presentaciones e informes de gestión de alto impacto.
+\end{itemize}
+
+\vspace{10pt}
+
+\noindent \textbf{Trópica - Gestión de Operaciones y Comunicación} \hfill \textbf{2023 -- 2024} \\
+\textit{Rol: Responsable de Administración y Gestión de Marca}
+\begin{itemize}[leftmargin=1.5em, labelsep=0.5em, itemsep=4pt]
+    \item \textbf{Gestión de Comunicación Corporativa:} Lideré el manejo de canales digitales y redes sociales, asegurando la coherencia del mensaje institucional y potenciando el posicionamiento estratégico de la marca.
+    \item \textbf{Administración Operativa y Logística:} Coordinación integral con proveedores y supervisión de la cadena de suministro, optimizando tiempos de entrega y manteniendo un control riguroso de activos e inventarios.
+    \item \textbf{Atención Ejecutiva y CRM:} Gestión personalizada de la cartera de clientes, aplicando estrategias de \textit{Customer Experience} (CX) para garantizar altos estándares de satisfacción y fidelización.
+\end{itemize}
+
+\vspace{10pt}
+
+\noindent \textbf{Project Advisor and Company Consultant - Pasante} \hfill \textbf{2021 -- 2023} \\
+\textit{Rol: Soporte Administrativo y Consultoría}
+\begin{itemize}[leftmargin=1.5em, labelsep=0.5em, itemsep=4pt]
+    \item \textbf{Asistencia Ejecutiva:} Soporte administrativo directo a la dirección, incluyendo la elaboración de reportes técnicos y presentaciones ejecutivas para la toma de decisiones.
+    \item \textbf{Gestión de Proyectos:} Brindé asesoramiento en proyectos nacionales e internacionales, facilitando la comunicación entre las partes interesadas y asegurando el cumplimiento de plazos establecidos.
+    \item \textbf{Control de Agenda:} Organización y seguimiento de agenda profesional, optimizando la gestión del tiempo y la coordinación de reuniones clave.
+\end{itemize}
+
+% --- EDUCACIÓN ---
+\section*{Formación Académica}
+
+\noindent \textbf{Universidad Nacional de Cuyo - Facultad de Ingeniería} \hfill \textbf{En curso} \\
+Ingeniería Industrial.
+
+\vspace{6pt}
+
+\noindent \textbf{Colegio San Jorge} \hfill \textbf{2018} \\
+Bachiller Internacional (Diploma Bilingüe).
+
+% --- CURSOS E IDIOMAS ---
+\section*{Competencias y Certificaciones}
+\begin{itemize}[leftmargin=1.5em, labelsep=0.5em, itemsep=3pt]
+    \item \textbf{Idiomas:} Inglés - Diploma IB (Nivel Oral Bilingüe / Escrito Avanzado).
+    \item \textbf{Especializaciones (CoderHouse):} Customer Experience (CX), Inbound Marketing, Community Manager.
+    \item \textbf{Herramientas:} Gestión de procesos operativos, análisis de datos, Paquete Office avanzado, herramientas de Marketing Digital y CRM.
+\end{itemize}
+
+\end{document}
